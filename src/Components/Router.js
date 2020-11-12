@@ -1,11 +1,13 @@
 import React from "react";
 import { HashRouter, Route } from "react-router-dom";
-import Home from "Screens/Coin";
+import Home from "Screens/Home";
+import Header from "Components/Header";
 
 const Router = () => {
   return (
     <HashRouter>
-      <Route path="/" exact component={Home} />
+      <Header />
+      <Route path="/" component={Home} />
     </HashRouter>
   );
 };
